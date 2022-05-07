@@ -55,16 +55,11 @@
             </div>
             <!-- mouse aside -->
             <div id="mouse" class="mouse row col-1 justify-content-center align-content-center">
-                <img id= "bat" src="./assets/Logos/logo_bat_flèche.png">
-                <img id= "icon" src="./assets/Logos/icon_facebook.png">
-                <img id= "icon" src="./assets/Logos/icon_ig.png">
-                <img id= "icon" src="./assets/Logos/icon_tw.png">
-                <img id= "bat" src="./assets/Logos/logo_bat_flèche_2.png">
-                <script>
-                    $("mouse").scroll(function(){
-                      console.log("Mouse scrolled")
-                    });
-                </script>
+                <img id= "bat" onscroll="scroll()" src="./assets/Logos/logo_bat_flèche.png">
+                <img id= "icon" onscroll="scroll()" src="./assets/Logos/icon_facebook.png">
+                <img id= "icon" onscroll="scroll()" src="./assets/Logos/icon_ig.png">
+                <img id= "icon" onscroll="scroll()" src="./assets/Logos/icon_tw.png">
+                <img id= "bat" onscroll="scroll()" src="./assets/Logos/logo_bat_flèche_2.png">
             </div>
         </div>
 
@@ -73,7 +68,7 @@
  
         
     
-    <form>
+    <!-- <form>
         <p>
             <input type="checkbox" name="newsletter" value="Hourly">
         
@@ -86,7 +81,7 @@
     </form>
     <div class="score">
 
-    </div>
+    </div> -->
 
 <script type="text/javascript" src="./assets/js/index.js"></script>
 </body>

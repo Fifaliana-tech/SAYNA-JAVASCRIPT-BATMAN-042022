@@ -79,11 +79,12 @@ nav {
     font-size: 3vw;
 }
 .mouse {
-    height: 100vh;
+    height: 10vh;
     text-align: center;
     color: #fff;
-    position: absolute;
+    position: fixed;
     margin-left: 83%;
+    margin-top: 50%;
 }
 .mouse #bat {
     margin: 10x;
@@ -122,10 +123,11 @@ nav {
     font-size: 18px;
 }
 .fleche-down {
-    background-color: black;
+    background-color: transparent;
     width: 100%;
     height: 150px;
 }
 #img-down {
    padding: 30px;
+   margin-top: 50%;
 }

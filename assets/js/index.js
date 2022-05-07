@@ -21,19 +21,17 @@ function menu(clicked_id){
 console.log(home);
 
 // scroll
-// $("mouse").scroll(function(){
-//     console.log("Mouse scrolled");
-// });
-window.addEventListener("scroll", (event) => {
-    let mouse = document.getElementById('mouse');
-    let scrollY = this.scrollY;
+const mouse = document.querySelector('.mouse');
+window.addEventListener('scroll',() => {
+    console.log('scroll');
+});
 
 //QUIZZ
-var countChecked = function() {
-    var n = $( "input:checked" ).length;
-    $( ".score" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
-  };
-  countChecked();
+// var countChecked = function() {
+//     var n = $( "input:checked" ).length;
+//     $( ".score" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
+//   };
+//   countChecked();
    
-  $( "input[type=checkbox]" ).on( "click", countChecked );
+//   $( "input[type=checkbox]" ).on( "click", countChecked );
 
