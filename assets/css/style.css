@@ -84,7 +84,7 @@ nav {
     color: #fff;
     position: fixed;
     margin-left: 83%;
-    margin-top: 50%;
+    margin-top: 25%;
 }
 .mouse #bat {
     margin: 10x;
@@ -129,5 +129,5 @@ nav {
 }
 #img-down {
    padding: 30px;
-   margin-top: 50%;
+   margin-top: 16%;
 }

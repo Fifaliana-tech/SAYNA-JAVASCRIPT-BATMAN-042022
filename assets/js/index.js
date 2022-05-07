@@ -23,7 +23,9 @@ console.log(home);
 // scroll
 const mouse = document.querySelector('.mouse');
 window.addEventListener('scroll',() => {
-    console.log('scroll');
+   if(window.scrollY >= mouse.offsetTop){
+       mouse.style.position = 'fixed';
+   } 
 });
 
 //QUIZZ
