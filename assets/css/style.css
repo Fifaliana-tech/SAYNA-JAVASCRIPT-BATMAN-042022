@@ -77,26 +77,27 @@ nav {
     font-weight: regular;
 }
 .mouse {
-    width: auto;
-    height: 10vh;
+    max-width: 10vw;
+    min-width: 6vw;
+    height: auto;
     text-align: center;
     color: #fff;
     position: fixed;
     margin-left: 83%;
-    margin-top: 25%;
+    margin-top: 15%;
 }
 #bat {
-    margin: 10x;
-    width: 15vh;
+    margin: 10px;
 }
 #icon {
     margin: 11px;
-    width: 6.6vh;
+    max-width: 3.5vw;
+    min-width: 3vw;
 }
 #btn-heros, #btn-adversaires {
-    padding: 12px;
+    padding: 19px;
     margin: 6px;
-    width: 131px;
+    width: auto;
     border: none;
     background: #d3c3c347;
     color: #fff;
