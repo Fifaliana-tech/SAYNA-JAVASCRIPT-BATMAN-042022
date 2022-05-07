@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMAN</title>
+    <!-- Font h1 & Boutons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <!-- Font h2 bold-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <!-- Font h2 regular-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <!-- Links bootstrap & CSS-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+ <body>
+    <main> 
+        <nav class="navbar row justify-content-center align-content-center m-0 p-0">
+            <div class="logo col-7 justify-content-center align-items-center py-5">
+                <img src="./assets/Logos/logohome.png">
+            </div>
+            <div class="menu col-3 justify-content-center align-items-center py-3">
+                <ul>
+                    <li id="home" onclick="menu(this.id)">HOME</li>
+                    <li id="game" onclick="menu(this.id)">GAME</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="contain row justify-content-center align-content-center m-0 p-0">
+            <div class="text row col-10 justify-content-center align-content-center">
+               
+                <p id="text-regular-douze">Au nom de ses parents assassinés, Bruce Wayne mène 
+                    <br>une guerre éternelle contre les criminels de Gothman City.
+                    <br>Il est vengeur. Il est la nuit.
+                    <h2 id="batman">Il est Batman.</h2>
+                </p> 
+                <div class="boutons">
+                    <button id="btn-heros">VOIR LE HEROS</button> 
+                    <button id="btn-adversaires">LES ADVERSAIRES</button>               
+                </div>
+                <div class="fleche-down">
+                    <img id= "img-down" src="./assets/Logos/flèche_down_header.png">
+                </div>
+                
+            </div>
+            <!-- mouse aside -->
+            <div id="mouse" class="mouse row col-1 justify-content-center align-content-center">
+                <img id= "bat" src="./assets/Logos/logo_bat_flèche.png">
+                <img id= "icon" src="./assets/Logos/icon_facebook.png">
+                <img id= "icon" src="./assets/Logos/icon_ig.png">
+                <img id= "icon" src="./assets/Logos/icon_tw.png">
+                <img id= "bat" src="./assets/Logos/logo_bat_flèche_2.png">
+                <script>
+                    $("mouse").scroll(function(){
+                      console.log("Mouse scrolled")
+                    });
+                </script>
+            </div>
+        </div>
+
+        
+    </main>
+ 
+        
+    
+    <form>
+        <p>
+            <input type="checkbox" name="newsletter" value="Hourly">
+        
+            <input type="checkbox" name="newsletter" value="Daily">
+            <input type="checkbox" name="newsletter" value="Weekly">
+        
+            <input type="checkbox" name="newsletter" value="Monthly">
+            <input type="checkbox" name="newsletter" value="Yearly">
+        </p>
+    </form>
+    <div class="score">
+
+    </div>
+
+<script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+</html>
