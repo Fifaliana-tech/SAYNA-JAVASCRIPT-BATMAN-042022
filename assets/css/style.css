@@ -157,8 +157,8 @@ nav {
     width: 95%;
     text-align: justify;
 }
-.img-container2 img {
-    width: 100%;
+#card1, #card2, #card3 {
+    width: 80%;
     height: auto;
 }
 figure {
@@ -171,7 +171,7 @@ figure {
     position: absolute;
     bottom: 20px;
     width: 91%;
-    top: 87%;
+    top: 117%;
     height: 77px;
     background: black;
     opacity: 0.8;
