@@ -106,7 +106,7 @@ nav {
     letter-spacing: 1.5px;
 }
 #btn-heros:hover, #btn-adversaires:hover{
-    background-image: linear-gradient(to left, #890008, #b4475f, #ca87a8, #dbc5de, #ffffff); 
+    background-image: linear-gradient(to left, #890008, #b4475f, #ca87a8, #eddebf); 
 } 
 
 .score {
@@ -156,4 +156,30 @@ nav {
     font-size: 1.5vw;
     width: 95%;
     text-align: justify;
+}
+.img-container2 img {
+    width: 100%;
+    height: auto;
+}
+figure {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+.text-img-contain1, .text-img-contain2, .text-img-contain3 {
+    position: absolute;
+    bottom: 20px;
+    width: 91%;
+    top: 87%;
+    height: 77px;
+    background: black;
+    opacity: 0.8;
+    border-bottom: 3px solid skyblue;
+    color: white;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    display: none;
 }

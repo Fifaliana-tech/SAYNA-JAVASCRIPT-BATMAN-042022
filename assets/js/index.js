@@ -41,3 +41,13 @@ jQuery("h2").animate({left:0, opacity:1},6000);
    
 //   $( "input[type=checkbox]" ).on( "click", countChecked );
 
+//Cards spiderman au cinema
+var figure = document.getElementsByClassName("figure");
+var textImgContain1 = document.querySelector(".text-img-contain1");
+var textImgContain2 = document.querySelector(".text-img-contain2");
+var textImgContain3 = document.querySelector(".text-img-contain3");
+
+function showDescription(){
+        console.log("bonjour");
+};
+showDescription()
