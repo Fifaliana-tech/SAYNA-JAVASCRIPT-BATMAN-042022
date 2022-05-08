@@ -79,20 +79,19 @@ nav {
 .mouse {
     max-width: 10vw;
     min-width: 6vw;
-    height: auto;
+    height: 100vh;
     text-align: center;
     color: #fff;
     position: fixed;
-    margin-left: 83%;
-    margin-top: 15%;
+    margin-left: 87.4%;
 }
 #bat {
     margin: 10px;
 }
 #icon {
     margin: 11px;
-    max-width: 3.5vw;
-    min-width: 3vw;
+    max-width: 4vw;
+    min-width: 3.5vw;
 }
 #btn-heros, #btn-adversaires {
     padding: 19px;
@@ -106,6 +105,9 @@ nav {
     font-size: 1vw;
     letter-spacing: 1.5px;
 }
+#btn-heros:hover, #btn-adversaires:hover{
+    background-image: linear-gradient(to left, #890008, #b4475f, #ca87a8, #dbc5de, #ffffff); 
+} 
 
 .score {
     background-color: #995e5c;

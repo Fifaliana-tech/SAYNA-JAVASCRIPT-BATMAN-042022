@@ -22,12 +22,16 @@ console.log(home);
 
 // scroll
 const mouse = document.querySelector('.mouse');
+const mouseOffsetTop = mouse.offsetTop;
+
 window.addEventListener('scroll',() => {
-   if(window.scrollY >= mouse.offsetTop){
+   if(window.scrollY > mouseOffsetTop){
        mouse.style.position = 'fixed';
    } 
 });
 
+jQuery("h2").fadeIn("slow" {direction: "right" }, 7500);
+jQuery("h2").animate({left:0, opacity:1},6000);
 //QUIZZ
 // var countChecked = function() {
 //     var n = $( "input:checked" ).length;
