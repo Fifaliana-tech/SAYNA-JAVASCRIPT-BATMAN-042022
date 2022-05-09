@@ -142,6 +142,10 @@ nav {
     background-color: black;
     text-align: left;
     color: #fff;
+    height: auto;
+}
+.img-container2{
+    width : 100%;
 }
 .text-container2 h2 {
     font-family: 'Space Grotesk', sans-serif;
@@ -163,9 +167,10 @@ nav {
 }
 figure {
     position: relative;
-    width: 500px;
-    height: 300px;
-    margin: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 5%;
 }
 .text-img-contain1, .text-img-contain2, .text-img-contain3 {
     position: absolute;
@@ -183,3 +188,42 @@ figure {
     box-sizing: border-box;
     display: none;
 }
+/* slide */
+.container-slide {
+    padding-top: 8%;
+    height: auto;
+    background: black;
+}
+.img-slide {
+    display: none;
+}
+.img-slide img {
+    vertical-align: middle;
+}
+/* Slideshow container
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  } */
+  
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .img-slide {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes img-slide {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  /* @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  } */

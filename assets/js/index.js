@@ -1,3 +1,15 @@
+"use strict"
+// $(document).ready(function(){
+//     //$('article.popular h1').css({fontFamily:'Verdana',color:'red'});
+//     //$('h1, p').css({fontFamily:'Verdana',color:'red'});
+//     // let allArticles = $('article');
+//     // $('h2').css({fontFamily:'Verdana',color:'red'});
+//     window.addEventListener('scroll',() => {
+//     $(".contain2").fadeIn(6000);
+//     });
+//     // jQuery("h2").animate({left:0, opacity:1},6000);
+// });
+
 var home = document.getElementById('home');
 var game = document.getElementById('game');
 
@@ -35,9 +47,6 @@ window.addEventListener('scroll',() => {
 // var textImgContain2 = document.querySelector(".text-img-contain2");
 // var textImgContain3 = document.querySelector(".text-img-contain3");
 
-
-// jQuery("h2").fadeIn("slow" {direction: "right" }, 7500);
-// jQuery("h2").animate({left:0, opacity:1},6000);
 //QUIZZ
 // var countChecked = function() {
 //     var n = $( "input:checked" ).length;
@@ -90,3 +99,19 @@ function hideDescription(clicked_id){
         console.log("bonjour card3");
     }    
 };
+// slide
+let slideIndex = 0;
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("img-slide");
+  console.log(slides.length);
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+ }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+showSlides();
