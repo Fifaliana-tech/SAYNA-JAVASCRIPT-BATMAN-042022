@@ -101,8 +101,8 @@
         </div>
         
     <!-- troisième partie : slide-->
-    <div class="contain2 row justify-content-center align-content-center m-0 pt-5 p-0">
-        <div class="container-slide">
+    <div class="contain2 row justify-content-center align-content-center m-0 pt-5 p-0" >
+        <div class="container-slide" onscroll="showFirstSlides()">
 
             <div class="img-slide">
             <img src="./assets/Illustrations/Home/Batslider1.png" style="width:100%">
@@ -150,6 +150,7 @@
     <!-- Quatrième partie -->
     <div class="contain2 row justify-content-center align-content-center m-0 pt-5 p-0">
         <div class="text-container2 row col-10 justify-content-center align-content-center">
+        <!-- NEMESIS -->
             <h2>N&Eacute;M&Eacute;SIS</h2>
             <p>Batman souhaite éradiquer la criminalité de Gotham. C'est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l'occasion de se mesurer à des antagonistes qui défient l'imagination et les lois de la physique. Parmi les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
             </p>
@@ -182,6 +183,7 @@
         </div>
 
         <div class="contain2 row justify-content-center align-content-center m-0 pt-5 p-0">
+        <!-- MULTIMEDIA -->
             <div class="text-container2 row col-10 justify-content-center align-content-center">
                 <h2>MULTIM&Eacute;DIA</h2>
                 <div class="row justify-content-center align-items-center">
@@ -193,7 +195,7 @@
                     
                     <img src="./assets/Logos/Icones en + dans Home/icon_flèche_2.png" style="width:60px; height:60px">
                 </div>
-                <!-- BANDE ANNONCE -->
+        <!-- BANDE ANNONCE -->
                 <div class="contain4 row justify-content-center align-items-center m-0 p-0">
                     <!-- <iframe id="myVideo" width="900" height="506" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <video id="baVideo" width="100%" height="auto" poster="./assets/Illustrations/Home/Bathome9_ba.png" controls>
@@ -203,29 +205,104 @@
                 </div>
             </div>
         </div>
-
+        <!-- FORMULAIRE -->
         <div class="contain6 row justify-content-center align-content-center m-0 pt-5 p-0">
             <div class="text-container6 row col-10 justify-content-center align-content-center">
                 <h2>PRENONS CONTACT</h2>
-                <form action="/action_page.php">
-                    <div class="mb-3">
+                <form action="/action_page.php" id="form justify-content-center align-content-center">
+                    <div class="form-contain">
                       <label for="email">ADRESSE EMAIL</label>
-                      <input type="email" id="email" placeholder="Adresse email" name="email">
+                      <div id="text-form" type="email" name="email">Adresse email</div>
                     </div>
-                    <div class="mb-3">
-                      <label for="pwd">NEWSLETTER</label>
-                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    <div class="form-contain">
+                        <label for="email">NEWSLETTER</label>
+                        <p>En cochant cette case vous acceptez de recevoir l'actualité concernant les aventures de Batman :  <input class="form-check-input" type="checkbox" name="remember"> </p>
+                        <div id="text-form2" type="text" name="text">
+                            <select id="text-form" name="text">
+                                <option value="choix">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                                <option value="semaine">Hebdomadaire</option>
+                                <option value="mois">Mensuelle</option>
+                                <option value="trimestre">Trimestrielle</option>
+                              </select>
+                        </div>
+                        <div id="text-form" type="text" name="text">Souhaitez vous recevoir des news</div>
                     </div>
-                    <div class="form-check mb-3">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                      </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                    <div>                     
+
+                    <div class="form-contain">
+                        <label for="email">MESSAGE</label>
+                        <div id="text-form" type="text" name="text">Laisser un commentaire pour la communauté</div>
+                        <div class="boutons" style="text-align: center;">
+                            <button id="btn-confirm">CONFIRMER</button>               
+                        </div>
+                    </div>  
                   </form>
             </div>
-        
-    </div> 
+        </div> 
+        <div class="contain7 row justify-content-center align-content-center m-0 pt-5 p-0">
+            <!-- FOOTER -->
+            <div class="text-container7 row col-10 py-5" onscroll="showSecondSlides()">
+                <div class="row justify-content-center">
+                    <div class="slide-cont-img col-2">
+                        <img src="./assets/Logos/Icones en + dans Home/icon_guillemets_1.png" style="width:60px; height:60px">
+                    </div>
+                    
+                    <div class="slide-cont col-6" id="citation1">
+                        <h2>La seule façon de vivre en ce bas monde, c'est en dehors des règles</h2>
+                        <p style="text-align:center">Dark Knight : Le Chevalier Noir - <br> Le Joker à Batman (2008) </p>
+                    </div>   
+                    
+                    <div class="slide-cont col-6" id="citation2">
+                        <h2>Soit on meurt en héros, soit on vit assez longtemps pour se voir endosser le rôle du méchant.</h2>
+                        <p style="text-align:center">Dark Knight : Le Chevalier Noir - <br> Harvey Dent (2008) </p>
+                    </div>
+
+                    <div class="slide-cont col-6" id="citation3">
+                        <h2>Le héros peut être en chacun, même en celui qui fait une chose aussi simple et rassurante que mettre un manteau sur les épaules d'un garçon et ainsi lui faire comprendre que le monde ne s'est pas écroulé.</h2>
+                        <p style="text-align:center">Dark Knight : The Dark Knight Rises - <br> Batman à James Gordon (2012) </p>
+                    </div>
+
+                    <div class="slide-cont col-6" id="citation4">
+                        <h2>Ah ! Tu crois que l'obscurité est ton allié. Tu n'a fait qu'adopter la pénombre. Moi je suis né dedans, j'ai été façonné par elle. Je n'ai découvert la lumière qu'a l'âge d'homme, et alors, elle m'a juste paru AVEUGLANTE!</h2>
+                        <p style="text-align:center">Dark Knight : The Dark Knight Rises - <br> Bane à Batman (2012) </p>
+                    </div>
+
+                    <div class="slide-cont col-6" id="citation5">
+                        <h2>Je vous prépare la batmoto monsieur ? - En pleine journée Alfred ? Pas très subtile. - La Lamborghini alors... beaucoup plus subtile.</h2>
+                        <p style="text-align:center">Dark Knight : The Dark Knight: Le Chevalier Noir  - <br> Alfred et Batman (2008) </p>
+                    </div>
+
+                    <div class="slide-cont col-6" id="citation6">
+                        <h2>Freeze, t'es givré ! </h2>
+                        <p style="text-align:center">Batman & Robin - <br> Batman à Mr Freeze (1997) </p>
+                    </div>
+
+                    <div class="slide-cont col-6" id="citation7">
+                        <h2>La peur est un outil. Cette lumière qui déchire le ciel, ce n'est pas qu'un appel à l'aide. C'est un avertissement.</h2>
+                        <p style="text-align:center">Batman - <br> Batman (2022) </p>
+                    </div>
+
+                    <div class="slide-cont col-6" id="citation8">
+                        <ul>
+                            <li>Pourquoi tombons nous Bruce ?</li>
+                            <li>Pour mieux apprendre à nous relever. </li>
+                        </ul>
+                        <p style="text-align:center">Batman Begins - <br> Thomas Wayne à Bruce Wayne 8 ans (2005) </p>
+                    </div>
+
+                    <div class="slide-cont col-6" id="citation9">
+                        <h2>Des hommes tombent du ciel, les dieux crachent la foudre, des innoncents meurent. C'est comme cela que ça commence, monsieur. De la fureur, de la fièvre, un sentiment d'impuissance, qui rend les hommes bien... cruels.</h2>
+                        <p style="text-align:center">Batman v Superman : l'aube de la justice - <br> Alfred à Batman (2016) </p>
+                    </div>
+
+                    <div class="slide-cont-img col-2">
+                        <img src="./assets/Logos/Icones en + dans Home/icon_guillemets_2.png" style="width:60px; height:60px">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
      
     <!-- <form>
         <p>

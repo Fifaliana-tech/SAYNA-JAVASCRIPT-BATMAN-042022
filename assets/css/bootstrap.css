@@ -2519,7 +2519,7 @@ textarea.form-control-lg {
   color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
-  border-radius: 0.25em;
+  border-radius: 0;
 }
 @media (max-width: 576px) {
   .form-check-input[type=checkbox] {

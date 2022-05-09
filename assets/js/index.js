@@ -99,22 +99,48 @@ function hideDescription(clicked_id){
         console.log("bonjour card3");
     }    
 };
-// slide
-let slideIndex = 0;
+// // slide
+function showFirstSlides() {
+    let slideIndex = 0;
+    function showSlides() {
+    let i;
+    let firstSlides = document.getElementsByClassName("img-slide");
+    console.log(firstSlides.length);
+    for (i = 0; i < firstSlides.length; i++) {
+        firstSlides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > firstSlides.length) {slideIndex = 1}    
+        firstSlides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    showSlides();
+    }
+showFirstSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("img-slide");
-  console.log(slides.length);
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
- }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-showSlides();
+    
+
+
+
+// var slideIndex = [1,1];
+// var slideId = ["img-slide", "slide-cont"]
+// showSlides(1, 0);
+// showSlides(1, 1);
+
+// function plusSlides(n, no) {
+//   showSlides(slideIndex[no] += n, no);
+// }
+
+// function showSlides(n, no) {
+//   var i;
+//   var x = document.getElementsByClassName(slideId[no]);
+//   if (n > x.length) {slideIndex[no] = 1}    
+//   if (n < 1) {slideIndex[no] = x.length}
+//   for (i = 0; i < x.length; i++) {
+//      x[i].style.display = "none";  
+//   }
+//   x[slideIndex[no]-1].style.display = "block";  
+// }
 
 //Multimédia
 // window.addEventListener('scroll',() => {
@@ -153,3 +179,25 @@ function playVid() {
   vid.play(); 
   imgVid.style.display = "none";
 } ;
+
+// CITATION
+
+function showSecondSlides() {
+    let slideIndex = 0;
+    function showSlides() {
+        let i;
+        let secondSlides = document.getElementsByClassName("slide-cont");
+        console.log(secondSlides.length);
+        for (i = 0; i < secondSlides.length; i++) {
+            secondSlides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > secondSlides.length) {slideIndex = 1}    
+        secondSlides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        showSlides();
+}
+showSecondSlides()
+
+
