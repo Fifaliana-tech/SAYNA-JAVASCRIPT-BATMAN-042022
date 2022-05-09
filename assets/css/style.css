@@ -220,13 +220,19 @@ figure {
 .slide-cont2 {
     display: flex;
     background-image: linear-gradient(to right, #979fa4, #7e8991, #65747e, #4d606c, #364c5a);
-    border-radius: 8px;
+    border-radius: 16px;
     padding-left: 0;
+    width: 53%;
+    margin: 9%;
+    box-shadow: #ffecb3 1.3px 1.7px 1px;
 }
 /* BANDE ANNONCE */
+.contain4 {
+    width: 80%;
+}
 .contain4 img {
     position: absolute;
     width: 145px;
     height: 120px;
-    margin: 17% auto;
+    margin: auto;
 }
