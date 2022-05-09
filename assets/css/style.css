@@ -236,3 +236,32 @@ figure {
     height: 120px;
     margin: auto;
 }
+
+/* PRENONS CONTACT */
+.contain6 {
+    background-image: linear-gradient(to right bottom, #c8c6c7, #b4aeb3, #9f97a2, #878191, #6d6d82, #5f6279, #515771, #424d68, #3f4864, #3c425f, #393d5b, #363856);
+    justify-content: center;
+    align-items: center;
+}
+.text-container6 {
+    border-left: 3px solid #774442;
+    border-right: 3px solid #774442;
+    text-align: left;
+    color: #fff;
+    height: 100vh;
+}
+.text-container6 h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    width: 95%;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.text-container6 p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: regular;
+    font-size: 1.5vw;
+    width: 95%;
+    text-align: justify;
+}

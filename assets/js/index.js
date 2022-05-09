@@ -146,7 +146,7 @@ showSlides();
 //     }
 // });
 // BANDE ANNONCE
-var vid = document.getElementById("myVideo"); 
+var vid = document.getElementById("baVideo"); 
 var img = document.getElementById("imgVid");
 
 function playVid() { 
