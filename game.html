@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMAN</title>
+    <!-- Font h1 & Boutons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <!-- Font h2 bold-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <!-- Font h2 regular-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <!-- Links bootstrap & CSS-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+ <body>
+     <!-- mouse aside -->
+     <div id="mouse" class="mouse row col-1 justify-content-center align-content-center">
+        <img id= "bat" onscroll="scroll()" src="./assets/Logos/logo_bat_flèche.png">
+        <img id= "icon" onscroll="scroll()" src="./assets/Logos/icon_facebook.png">
+        <img id= "icon" onscroll="scroll()" src="./assets/Logos/icon_ig.png">
+        <img id= "icon" onscroll="scroll()" src="./assets/Logos/icon_tw.png">
+        <img id= "bat" onscroll="scroll()" src="./assets/Logos/logo_bat_flèche_2.png">
+    </div>
+    <main class="main-game"> 
+        <nav class="navbar row justify-content-center align-content-center m-0 p-0">
+            <div class="logo col-7 justify-content-center align-items-center py-5">
+                <img src="./assets/Logos/logohome.png">
+            </div>
+            <div class="menu col-3 justify-content-center align-items-center py-3">
+                <ul>
+                    <li id="home" onclick="menu(this.id)">HOME</li>
+                    <li id="game" onclick="menu(this.id)">GAME</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="contain1 row justify-content-center align-content-center m-0 p-0">
+            <!-- Première partie -->
+            <div class="text-container1 row col-10 justify-content-center align-content-center">
+               
+                <h1>LET'S PLAY A<br> LITTLE GAME...</h1>
+                
+            </div>
+            
+        </div>       
+    </main>
+    <div class="contain2 justify-content-center align-content-center">
+        <!-- QUIZZ -->
+            <!-- QUIZZ N°1 -->
+            <div class="text-container2-game col-10 justify-content-center align-content-center">
+                <h2>QUIZZ NIVEAU 1</h2>
+                <p>Quel est l'autre nom de l'Homme-Mystère ?</p>
+                <form action="/action_page.php">
+                    <div class="choix">
+                        <input type="checkbox" id="choix1" name="choix1" value="Sphinx">
+                        <label for="choix1"> Le Sphinx</label><br>
+                    </div>
+                    <div class="choix">
+                        <input type="checkbox" id="choix2" name="choix2" value="Saphir">
+                        <label for="choix2"> Saphir </label><br>
+                    </div>
+                    <div class="choix">
+                        <input type="checkbox" id="choix2" name="choix2" value="Joker">
+                        <label for="choix3"> Le Joker</label><br><br>
+                    </div>
+                  </form>
+
+                <p>Quelle est l'ancienne profession de Harlery Quinn ?</p>
+                <form action="/action_page.php">
+                    <div class="choix">
+                        <input type="checkbox" id="choix1" name="choix1" value="infirmière">
+                        <label for="choix1"> Infirmière</label><br>
+                    </div>
+                    <div class="choix">
+                        <input type="checkbox" id="choix2" name="choix2" value="Psychiatre">
+                        <label for="choix2"> Psychiatre</label><br>
+                    </div>
+                    <div class="choix">
+                        <input type="checkbox" id="choix2" name="choix2" value="Dentiste">
+                        <label for="choix3"> Dentiste</label><br><br>
+                    </div>
+                  </form>
+
+                  <p>Quel est l'objet fétiche de Double Face ?</p>
+                  <form action="/action_page.php">
+                      <div class="choix">
+                          <input type="checkbox" id="choix1" name="choix1" value="pièce">
+                          <label for="choix1"> Une pièce</label><br>
+                      </div>
+                      <div class="choix">
+                          <input type="checkbox" id="choix2" name="choix2" value="livre">
+                          <label for="choix2"> Un livre</label><br>
+                      </div>
+                      <div class="choix">
+                          <input type="checkbox" id="choix2" name="choix2" value="couteau">
+                          <label for="choix3"> Un couteau</label><br><br>
+                      </div>
+                    </form>
+
+                    <p>Quelle ville Batman défend-il ?</p>
+                  <form action="/action_page.php">
+                      <div class="choix">
+                          <input type="checkbox" id="choix1" name="choix1" value="Gotham City">
+                          <label for="choix1"> Gotham City</label><br>
+                      </div>
+                      <div class="choix">
+                          <input type="checkbox" id="choix2" name="choix2" value="Starling City">
+                          <label for="choix2"> Starling City</label><br>
+                      </div>
+                      <div class="choix">
+                          <input type="checkbox" id="choix3" name="choix2" value="Hell's Kitchen">
+                          <label for="choix3"> Hell's Kitchen</label><br><br>
+                      </div>
+                    </form>
+
+                    <p>Tim Burtin a réalisé deux Batman, qui jouait Batman ?</p>
+                  <form action="/action_page.php">
+                      <div class="choix">
+                          <input type="checkbox" id="choix1" name="choix1" value="Georges Clooney">
+                          <label for="choix1"> Georges Clooney</label><br>
+                      </div>
+                      <div class="choix">
+                          <input type="checkbox" id="choix2" name="choix2" value="Var Kilmer">
+                          <label for="choix2"> Var Kilmer</label><br>
+                      </div>
+                      <div class="choix">
+                          <input type="checkbox" id="choix3" name="choix2" value="Mickael Keaton">
+                          <label for="choix3"> Mickael Keaton</label><br><br>
+                      </div>
+                    </form>
+            </div>
+    </div>            
+
+    <div class="contain7 row justify-content-center align-content-center m-0 pt-5 p-0">
+        <div class="boutons" style="text-align: center;">
+            <button id="btn-confirm">DEMARRER LE QUIZZ</button>               
+        </div>
+        <div class="text-footer" style="text-align:center; width:100%; margin-top: 5%;">
+            <img src="./assets/Logos/icon_WB.png" width="30px" height="30px">  Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+        </div>
+        <div class="logos">
+            <img src="./assets/Logos/logo_sayna_white.png" width="60px" height="60px">
+            <img src="./assets/Logos/icon_x.png" width="30px" height="30px">
+            <img src="./assets/Logos/icon_DC.png" width="60px" height="60px">
+            <img src="./assets/Logos/icon_facebook.png" width="40px" height="40px" style="margin-left: 5%;">
+            <img src="./assets/Logos/icon_ig.png" width="40px" height="40px">
+            <img src="./assets/Logos/icon_tw.png" width="40px" height="40px">
+        </div>
+    </div>
+     
+    <!-- <form>
+        <p>
+            <input type="checkbox" name="newsletter" value="Hourly">
+        
+            <input type="checkbox" name="newsletter" value="Daily">
+            <input type="checkbox" name="newsletter" value="Weekly">
+        
+            <input type="checkbox" name="newsletter" value="Monthly">
+            <input type="checkbox" name="newsletter" value="Yearly">
+        </p>
+    </form>
+    <div class="score">
+
+    </div> -->
+
+<script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+</html>

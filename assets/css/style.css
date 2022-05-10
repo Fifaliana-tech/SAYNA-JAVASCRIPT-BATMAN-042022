@@ -16,6 +16,7 @@ main {
     background-repeat: no-repeat;
     height: 87vh;
 }
+
 nav {
     padding: 10px;
     height: 90px;
@@ -365,4 +366,47 @@ figure {
 }
 .logos img{
     margin : 10px;
+}
+
+/* GAME */
+.main-game {
+    background: url(../Illustrations/Game/Batgame1.png);
+}
+.main-game h1 {
+    font-size: 3.5vw; 
+    font-family: 'Radjahni', sans-serif;
+    font-weight: medium;
+    text-align: left;
+    padding-left: 5%;
+}
+.main-game .contain1 {
+    height: 50vh;
+}
+.main-game .contain2 {
+    margin-top: -16%;
+}
+.text-container2-game {
+    background-color: black;
+    text-align: left;
+    color: #fff;
+    height: auto;
+    padding-left: 10%;
+}
+.text-container2-game h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2vw;
+}
+.text-container2-game p {
+    font-family: 'Radjahni', sans-serif;
+    font-size: 1vw;
+    padding-top: 3%;
+}
+.choix {
+    background-color: grey;
+    width: 40%;
+    margin: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
