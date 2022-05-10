@@ -53,6 +53,10 @@ nav {
     cursor: pointer;
 }
 
+.menu ul li a {
+    text-decoration: none; 
+    color: white;
+}
 .left-line {
     border-left : 4px solid #eee;
 }
@@ -409,4 +413,11 @@ figure {
     align-content: center;
     justify-content: center;
     justify-items: center;
+}
+
+.boutons-game h2 {
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2vw;
+    padding-bottom: 5%;
 }
