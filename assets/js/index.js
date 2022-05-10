@@ -1,14 +1,4 @@
 "use strict"
-// $(document).ready(function(){
-//     //$('article.popular h1').css({fontFamily:'Verdana',color:'red'});
-//     //$('h1, p').css({fontFamily:'Verdana',color:'red'});
-//     // let allArticles = $('article');
-//     // $('h2').css({fontFamily:'Verdana',color:'red'});
-//     window.addEventListener('scroll',() => {
-//     $(".contain2").fadeIn(6000);
-//     });
-//     // jQuery("h2").animate({left:0, opacity:1},6000);
-// });
 
 var home = document.getElementById('home');
 var game = document.getElementById('game');
@@ -41,20 +31,7 @@ window.addEventListener('scroll',() => {
        mouse.style.position = 'fixed';
    } 
 });
-//Cards spiderman au cinema
-// var figure = document.getElementsByClassName("figure");
-// var textImgContain1 = document.querySelector(".text-img-contain1");
-// var textImgContain2 = document.querySelector(".text-img-contain2");
-// var textImgContain3 = document.querySelector(".text-img-contain3");
 
-//QUIZZ
-// var countChecked = function() {
-//     var n = $( "input:checked" ).length;
-//     $( ".score" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
-//   };
-//   countChecked();
-   
-//   $( "input[type=checkbox]" ).on( "click", countChecked );
 
 //Cards spiderman au cinema
 var figure = document.getElementsByClassName("figure");
@@ -118,59 +95,34 @@ function showFirstSlides() {
     }
 showFirstSlides();
 
-    
-
-
-
-// var slideIndex = [1,1];
-// var slideId = ["img-slide", "slide-cont"]
-// showSlides(1, 0);
-// showSlides(1, 1);
-
-// function plusSlides(n, no) {
-//   showSlides(slideIndex[no] += n, no);
-// }
-
-// function showSlides(n, no) {
-//   var i;
-//   var x = document.getElementsByClassName(slideId[no]);
-//   if (n > x.length) {slideIndex[no] = 1}    
-//   if (n < 1) {slideIndex[no] = x.length}
-//   for (i = 0; i < x.length; i++) {
-//      x[i].style.display = "none";  
-//   }
-//   x[slideIndex[no]-1].style.display = "block";  
-// }
-
 //Multimédia
-// window.addEventListener('scroll',() => {
-//     let slideIndex = 1;
-//     showSlides(slideIndex);
-    
-//     function plusSlides(n) {
-//       showSlides(slideIndex += n);
-//     }
-    
-//     function currentSlide(n) {
-//       showSlides(slideIndex = n);
-//     }
-    
-//     function showSlides(n) {
-//       let i;
-//       let slides = document.getElementsByClassName("mySlides");
-//       let dots = document.getElementsByClassName("dot");
-//       if (n > slides.length) {slideIndex = 1}    
-//       if (n < 1) {slideIndex = slides.length}
-//       for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";  
-//       }
-//       for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//       }
-//       slides[slideIndex-1].style.display = "block";  
-//       dots[slideIndex-1].className += " active";
-//     }
-// });
+// CARD SLIDE
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide-cont2");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";  
+  dots[slideIndex-1].className += " active";
+}
 // BANDE ANNONCE
 var vid = document.getElementById("baVideo"); 
 var img = document.getElementById("imgVid");
@@ -194,7 +146,7 @@ function showSecondSlides() {
         slideIndex++;
         if (slideIndex > secondSlides.length) {slideIndex = 1}    
         secondSlides[slideIndex-1].style.display = "block";  
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
         showSlides();
 }

@@ -184,17 +184,51 @@
 
         <div class="contain2 row justify-content-center align-content-center m-0 pt-5 p-0">
         <!-- MULTIMEDIA -->
+            <!-- CARDS SLIDE -->
             <div class="text-container2 row col-10 justify-content-center align-content-center">
                 <h2>MULTIM&Eacute;DIA</h2>
                 <div class="row justify-content-center align-items-center">
-                    <img src="./assets/Logos/Icones en + dans Home/icon_flèche_1.png" style="width:60px; height:60px">
+                    
                     <div class="slide-cont2 col-10 justify-content-center align-items-center">
-                        <img src="./assets/Illustrations/Home/Bathome8.png" style="width:60%; height:auto">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia placeat cum nam aut ab. In ea eum debitis fuga vel.</p>
+                        <img src="./assets/Illustrations/Home/Bathome8.png" style="width:40%; max-height: 350px;">
+                        <div style="width:60%; max-height: 350px; padding-left: 10px;">
+                            <h4 style="font-family: 'Radjahni', sans-serif; font-size: 1.5vw; color: lightgrey; padding-top: 3%; letter-spacing: 3px">ACTION, ADVENTURE</h4>
+                            <p style="font-family: 'Radjahni', sans-serif; font-size: 2.5vw; color: lightgrey">Batman Begins</p>
+                            <h3>IMDB: <span id="jaune" style="color: yellow;">8.2</span></h3>
+                            <p style="font-size: 1vw; padding-bottom: 2%;">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gtoham, avec l'aide de son majordhome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.</p>
+                        </div>
                     </div>
                     
-                    <img src="./assets/Logos/Icones en + dans Home/icon_flèche_2.png" style="width:60px; height:60px">
+                    <div class="slide-cont2 col-10 justify-content-center align-items-center">
+                        <img src="./assets/Illustrations/Home/Bathome10_slide_ba.png" style="width:40%; max-height: 350px;">
+                        <div style="width:60%; max-height: 350px; padding-left: 10px;">
+                            <h4 style="font-family: 'Radjahni', sans-serif; font-size: 1.5vw; color: lightgrey; padding-top: 3%; letter-spacing: 3px">ACTION, ADVENTURE</h4>
+                            <p style="font-family: 'Radjahni', sans-serif; font-size: 2.5vw; color: lightgrey">Batman Begins</p>
+                            <h3>IMDB: <span id="jaune" style="color: yellow;">10.2</span></h3>
+                            <p style="font-size: 1vw; padding-bottom: 2%;">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gtoham, avec l'aide de son majordhome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-cont2 col-10 justify-content-center align-items-center">
+                        <img src="./assets/Illustrations/Home/Bathome11_slide_ba.png" style="width:40%; max-height: 350px;">
+                        <div style="width:60%; max-height: 350px; padding-left: 10px;">
+                            <h4 style="font-family: 'Radjahni', sans-serif; font-size: 1.5vw; color: lightgrey; padding-top: 3%; letter-spacing: 3px">ACTION, ADVENTURE</h4>
+                            <p style="font-family: 'Radjahni', sans-serif; font-size: 2.5vw; color: lightgrey">Batman Begins</p>
+                            <h3>IMDB: <span id="jaune" style="color: yellow;">12.2</span></h3>
+                            <p style="font-size: 1vw; padding-bottom: 2%;">Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à Gtoham, avec l'aide de son majordhome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.</p>
+                        </div>
+                    </div>
+                    
                 </div>
+                <img src="./assets/Logos/Icones en + dans Home/icon_flèche_1.png" style="width:60px; height:60px; position: absolute;margin-left: -35%;margin-top: 19%;" onclick="plusSlides(-1)">
+                <img src="./assets/Logos/Icones en + dans Home/icon_flèche_2.png" style="width:60px; height:60px; position: absolute;margin-left: 35%;margin-top: 19%;" onclick="plusSlides(1)">
+                
+                <div style="text-align:center; margin-top: -5%; margin-bottom: 10%;">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
         <!-- BANDE ANNONCE -->
                 <div class="contain4 row justify-content-center align-items-center m-0 p-0">
                     <!-- <iframe id="myVideo" width="900" height="506" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
@@ -248,58 +282,67 @@
                         <img src="./assets/Logos/Icones en + dans Home/icon_guillemets_1.png" style="width:60px; height:60px">
                     </div>
                     
-                    <div class="slide-cont col-6" id="citation1">
+                    <div class="slide-cont col-6">
                         <h2>La seule façon de vivre en ce bas monde, c'est en dehors des règles</h2>
                         <p style="text-align:center">Dark Knight : Le Chevalier Noir - <br> Le Joker à Batman (2008) </p>
                     </div>   
                     
-                    <div class="slide-cont col-6" id="citation2">
+                    <div class="slide-cont col-6">
                         <h2>Soit on meurt en héros, soit on vit assez longtemps pour se voir endosser le rôle du méchant.</h2>
                         <p style="text-align:center">Dark Knight : Le Chevalier Noir - <br> Harvey Dent (2008) </p>
                     </div>
 
-                    <div class="slide-cont col-6" id="citation3">
+                    <div class="slide-cont col-6">
                         <h2>Le héros peut être en chacun, même en celui qui fait une chose aussi simple et rassurante que mettre un manteau sur les épaules d'un garçon et ainsi lui faire comprendre que le monde ne s'est pas écroulé.</h2>
                         <p style="text-align:center">Dark Knight : The Dark Knight Rises - <br> Batman à James Gordon (2012) </p>
                     </div>
 
-                    <div class="slide-cont col-6" id="citation4">
+                    <div class="slide-cont col-6">
                         <h2>Ah ! Tu crois que l'obscurité est ton allié. Tu n'a fait qu'adopter la pénombre. Moi je suis né dedans, j'ai été façonné par elle. Je n'ai découvert la lumière qu'a l'âge d'homme, et alors, elle m'a juste paru AVEUGLANTE!</h2>
                         <p style="text-align:center">Dark Knight : The Dark Knight Rises - <br> Bane à Batman (2012) </p>
                     </div>
 
-                    <div class="slide-cont col-6" id="citation5">
-                        <h2>Je vous prépare la batmoto monsieur ? - En pleine journée Alfred ? Pas très subtile. - La Lamborghini alors... beaucoup plus subtile.</h2>
+                    <div class="slide-cont col-6">
+                        <h2>- Je vous prépare la batmoto monsieur ? <br>- En pleine journée Alfred ? Pas très subtile. <br>- La Lamborghini alors... beaucoup plus subtile.</h2>
                         <p style="text-align:center">Dark Knight : The Dark Knight: Le Chevalier Noir  - <br> Alfred et Batman (2008) </p>
                     </div>
 
-                    <div class="slide-cont col-6" id="citation6">
+                    <div class="slide-cont col-6">
                         <h2>Freeze, t'es givré ! </h2>
                         <p style="text-align:center">Batman & Robin - <br> Batman à Mr Freeze (1997) </p>
                     </div>
 
-                    <div class="slide-cont col-6" id="citation7">
+                    <div class="slide-cont col-6">
                         <h2>La peur est un outil. Cette lumière qui déchire le ciel, ce n'est pas qu'un appel à l'aide. C'est un avertissement.</h2>
                         <p style="text-align:center">Batman - <br> Batman (2022) </p>
                     </div>
 
-                    <div class="slide-cont col-6" id="citation8">
-                        <ul>
-                            <li>- Pourquoi tombons nous Bruce ?</li>
-                            <li>- Pour mieux apprendre à nous relever. </li>
-                        </ul>
+                    <div class="slide-cont col-6">
+                        <h2>- Pourquoi tombons nous Bruce ?<br>- Pour mieux apprendre à nous relever. </li>
+                        </h2>
                         <p style="text-align:center">Batman Begins - <br> Thomas Wayne à Bruce Wayne 8 ans (2005) </p>
                     </div>
 
-                    <div class="slide-cont col-6" id="citation9">
+                    <div class="slide-cont col-6">
                         <h2>Des hommes tombent du ciel, les dieux crachent la foudre, des innoncents meurent. C'est comme cela que ça commence, monsieur. De la fureur, de la fièvre, un sentiment d'impuissance, qui rend les hommes bien... cruels.</h2>
                         <p style="text-align:center">Batman v Superman : l'aube de la justice - <br> Alfred à Batman (2016) </p>
                     </div>
 
-                    <div class="slide-cont-img col-2">
-                        <img src="./assets/Logos/Icones en + dans Home/icon_guillemets_2.png" style="width:60px; height:60px">
+                    <div class="slide-cont-img col-2" style="padding-top: 13%;">
+                        <img src="./assets/Logos/Icones en + dans Home/icon_guillemets_2.png" style="width:60px; height:60px;">
                     </div>
-                    
+
+                    <div class="text-footer" style="text-align:center; width:100%; margin-top: 5%;">
+                        <img src="./assets/Logos/icon_WB.png" width="30px" height="30px">  Ce projet respecte l'univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves
+                    </div>
+                    <div class="logos">
+                        <img src="./assets/Logos/logo_sayna_white.png" width="60px" height="60px">
+                        <img src="./assets/Logos/icon_x.png" width="30px" height="30px">
+                        <img src="./assets/Logos/icon_DC.png" width="60px" height="60px">
+                        <img src="./assets/Logos/icon_facebook.png" width="40px" height="40px" style="margin-left: 5%;">
+                        <img src="./assets/Logos/icon_ig.png" width="40px" height="40px">
+                        <img src="./assets/Logos/icon_tw.png" width="40px" height="40px">
+                    </div>
                 </div>
             </div>
         </div>
