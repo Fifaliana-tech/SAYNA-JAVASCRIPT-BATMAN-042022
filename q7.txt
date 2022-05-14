@@ -1,0 +1,1 @@
+{"question":"Qui sont les créateurs de Batman ?","response":[{"text":"Bob Kane et Bill Finger"},{"text":"Stan Lee et Bill Finger"},{"text":"Le grand Mike"}]}

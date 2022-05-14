@@ -1,0 +1,1 @@
+{"question":"Quelle ville Batman défend-il ?","response":[{"text":"Gotham City"},{"text":"Paris"},{"text":"Tananarive"}]}

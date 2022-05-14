@@ -1,0 +1,1 @@
+{"question":"Quelle est l'ancienne profession de Harley Quinn ?","response":[{"text":"Infirmière"},{"text":"Psychiatre"},{"text":"Dev. Front"}]}

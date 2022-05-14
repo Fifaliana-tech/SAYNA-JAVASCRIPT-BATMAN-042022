@@ -1,0 +1,1 @@
+{"question":"Tim Burton a réalisé 2 Batman, qui jouait Batman ?","response":[{"text":"Gotham City"},{"text":"Hell's Kitchen"},{"text":"Starling City"}]}

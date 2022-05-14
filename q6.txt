@@ -1,0 +1,1 @@
+{"question":"Dans son premier Batman (1989) Jack Nicholson jouait :","response":[{"text":"Le Joker"},{"text":"Le Pingouin"},{"text":"L'homme Mystère"}]}

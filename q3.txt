@@ -1,0 +1,1 @@
+{"question":"Quel est l'objet fétiche de Double Face ?","response":[{"text":"Un couteau"},{"text":"Une photo du logo de Sayna"},{"text":"Une pièce"}]}

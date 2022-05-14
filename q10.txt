@@ -1,0 +1,1 @@
+{"question":"Batman, c'est aussi le nom d'une ville en...","response":[{"text":"France"},{"text":"Madagascar"},{"text":"Turquie"}]}

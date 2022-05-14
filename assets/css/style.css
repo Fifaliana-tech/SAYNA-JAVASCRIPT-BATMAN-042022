@@ -405,19 +405,35 @@ figure {
     font-size: 1vw;
     padding-top: 3%;
 }
-.choix {
+.question1 ,.question2, .question3 ,.question4, .question5 ,.question6,.question7 ,.question8, .question9 ,.question10 {
     background-color: grey;
     width: 40%;
+    height: 50px;
     margin: 10px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
+    padding: 2%;
 }
+
 
 .boutons-game h2 {
     color: white;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 2vw;
     padding-bottom: 5%;
+}
+
+/*QUIZZ*/
+#layer {
+    display: none;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: white;
+    color: #6b6b6b;
+    z-index: 1;
+    box-shadow: 2px 2px 4px #000000;
+    margin-top: -15%;
+    padding: 5%;
 }
