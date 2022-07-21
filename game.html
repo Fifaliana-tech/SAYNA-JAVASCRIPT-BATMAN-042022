@@ -20,6 +20,8 @@
     <!-- Links bootstrap & CSS-->
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Link bibliothèque Jquery-->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script> 
 </head>
  <body>
      <!-- mouse aside -->
@@ -60,15 +62,15 @@
                 <h2>QUIZZ NIVEAU 1</h2>
                 <p>Question n°1 : Quel est l'autre nom de l'Homme-Mystère ?</p>
                 <form action="/action_page.php">
-                    <div class="question1">
+                    <div class="question1 quest">
                         <input type="checkbox" id="choix1" name="choix1" value="Sphinx"  onclick="question1(this.id)">
                         <label for="choix1"> Le Sphinx</label><br>
                     </div>
-                    <div class="question1">
+                    <div class="question1 quest">
                         <input type="checkbox" id="choix2" name="choix2" value="Saphir"  onclick="question1(this.id)">
                         <label for="choix2"> Saphir </label><br>
                     </div>
-                    <div class="question1">
+                    <div class="question1 quest">
                         <input type="checkbox" id="choix3" name="choix2" value="Le Joker"  onclick="question1(this.id)">
                         <label for="choix3"> Le Joker</label><br><br>
                     </div>
@@ -76,15 +78,15 @@
                 <!-- Question n°2 -->
                 <p>Question n°2 : Quelle est l'ancienne profession de Harlery Quinn ?</p>
                 <form action="/action_page.php">
-                    <div class="question2">
+                    <div class="question2 quest">
                         <input type="checkbox" id="choix1" name="choix1" value="Infirmière" onclick="question2(this.id)">
                         <label for="choix1"> Infirmière</label><br>
                     </div>
-                    <div class="question2">
+                    <div class="question2 quest">
                         <input type="checkbox" id="choix2" name="choix2" value="Psychiatre" onclick="question2(this.id)">
                         <label for="choix2"> Psychiatre</label><br>
                     </div>
-                    <div class="question2">
+                    <div class="question2 quest">
                         <input type="checkbox" id="choix3" name="choix2" value="Dev. Front" onclick="question2(this.id)">
                         <label for="choix3"> Dev. Front</label><br><br>
                     </div>
@@ -92,15 +94,15 @@
                 <!-- Question n°3 -->
                 <p>Question n°3 : Quel est l'objet fétiche de Double Face ?</p>
                 <form action="/action_page.php">
-                      <div class="question3">
+                      <div class="question3 quest">
                           <input type="checkbox" id="choix1" name="choix1" value="Un couteau" onclick="question3(this.id)">
                           <label for="choix1"> Un couteau</label><br>
                       </div>
-                      <div class="question3">
+                      <div class="question3 quest">
                           <input type="checkbox" id="choix2" name="choix2" value="Une photo du logo de Sayna" onclick="question3(this.id)">
                           <label for="choix2"> Une photo du logo de Sayna</label><br>
                       </div>
-                      <div class="question3">
+                      <div class="question3 quest">
                           <input type="checkbox" id="choix3" name="choix2" value="Une pièce" onclick="question3(this.id)">
                           <label for="choix3"> Une pièce</label><br><br>
                       </div>
@@ -108,15 +110,15 @@
                 <!-- Question n°4 -->
                 <p>Question n°4 : Quelle ville Batman défend-il ?</p>
                 <form action="/action_page.php">
-                      <div class="question4">
+                      <div class="question4 quest">
                           <input type="checkbox" id="choix1" name="choix1" value="Gotham City" onclick="question4(this.id)">
                           <label for="choix1"> Gotham City</label><br>
                       </div>
-                      <div class="question4">
+                      <div class="question4 quest">
                           <input type="checkbox" id="choix2" name="choix2" value="Starling City" onclick="question4(this.id)">
                           <label for="choix2"> Starling City</label><br>
                       </div>
-                      <div class="question4">
+                      <div class="question4 quest">
                           <input type="checkbox" id="choix3" name="choix2" value="Hell's Kitchen" onclick="question4(this.id)">
                           <label for="choix3"> Hell's Kitchen</label><br><br>
                       </div>
@@ -124,15 +126,15 @@
                 <!-- Question n°5 -->
                 <p>Question n°5 :Tim Burtin a réalisé deux Batman, qui jouait Batman ?</p>
                 <form action="/action_page.php">
-                      <div class="question5">
+                      <div class="question5 quest">
                           <input type="checkbox" id="choix1" name="choix1" value="Georges Clooney" onclick="question5(this.id)">
                           <label for="choix1"> Georges Clooney</label><br>
                       </div>
-                      <div class="question5">
+                      <div class="question5 quest">
                           <input type="checkbox" id="choix2" name="choix2" value="Var Kilmer" onclick="question5(this.id)">
                           <label for="choix2"> Var Kilmer</label><br>
                       </div>
-                      <div class="question5">
+                      <div class="question5 quest">
                           <input type="checkbox" id="choix3" name="choix2" value="Mickael Keaton" onclick="question5(this.id)">
                           <label for="choix3"> Mickael Keaton</label><br><br>
                       </div>
@@ -140,15 +142,15 @@
                 <!-- Question n°6 -->
                 <p>Question n°6 : Dans son premier Batman (1989) Jack Nicholoson jouait :</p>
                 <form action="/action_page.php">
-                      <div class="question6">
+                      <div class="question6 quest">
                           <input type="checkbox" id="choix1" name="choix1" value="Le Pingouin" onclick="question6(this.id)">
                           <label for="choix1"> Le Pingouin</label><br>
                       </div>
-                      <div class="question6">
+                      <div class="question6 quest">
                           <input type="checkbox" id="choix2" name="choix2" value="L'Homme Mystère" onclick="question6(this.id)">
                           <label for="choix2"> L'Homme Mystère</label><br>
                       </div>
-                      <div class="question6">
+                      <div class="question6 quest">
                           <input type="checkbox" id="choix3" name="choix2" value="Le Joker" onclick="question6(this.id)">
                           <label for="choix3"> Le Joker</label><br><br>
                       </div>
@@ -156,15 +158,15 @@
                 <!--Question n°7 -->
                 <p>Question n°7 : Quel est le prénom des parents du jeune Bruce Wayne ?</p>
                 <form action="/action_page.php">
-                      <div class="question7">
+                      <div class="question7 quest">
                           <input type="checkbox" id="choix1" name="choix1" value="Thomas et Martha" onclick="question7(this.id)">
                           <label for="choix1"> Thomas et Martha</label><br>
                       </div>
-                      <div class="question7">
+                      <div class="question7 quest">
                           <input type="checkbox" id="choix2" name="choix2" value="Elaine et Georges" onclick="question7(this.id)">
                           <label for="choix2"> Elaine et Georges</label><br>
                       </div>
-                      <div class="question7">
+                      <div class="question7 quest">
                           <input type="checkbox" id="choix3" name="choix2" value="Martha et James" onclick="question7(this.id)">
                           <label for="choix3"> Martha et James</label><br><br>
                       </div>
@@ -172,15 +174,15 @@
                 <!-- Question n°8 -->
                 <p>Question n°8 : Qui interprète le Joker en 2008 ?</p>
                 <form action="/action_page.php">
-                      <div class="question8">
+                      <div class="question8 quest">
                           <input type="checkbox" id="choix1" name="choix1" value="Heath Ledger" onclick="question8(this.id)">
                           <label for="choix1"> Heath Ledger</label><br>
                       </div>
-                      <div class="question8">
+                      <div class="question8 quest">
                           <input type="checkbox" id="choix2" name="choix2" value="Haeth Ledger" onclick="question8(this.id)">
                           <label for="choix2"> Haeth Ledger</label><br>
                       </div>
-                      <div class="question8">
+                      <div class="question8 quest">
                           <input type="checkbox" id="choix3" name="choix2" value="Heath Ledger" onclick="question8(this.id)">
                           <label for="choix3"> Heath Ledger</label><br><br>
                       </div>
@@ -188,15 +190,15 @@
                 <!-- Question n°9 -->
                 <p>Question n°9 : En quelle année Robin fait il sa première apparation ?</p>
                 <form action="/action_page.php">
-                      <div class="question9">
+                      <div class="question9 quest">
                           <input type="checkbox" id="choix1" name="choix1" value="1940" onclick="question9(this.id)">
                           <label for="choix1"> 1940</label><br>
                       </div>
-                      <div class="question9">
+                      <div class="question9 quest">
                           <input type="checkbox" id="choix2" name="choix2" value="1939" onclick="question9(this.id)">
                           <label for="choix2"> 1939</label><br>
                       </div>
-                      <div class="question9">
+                      <div class="question9 quest">
                           <input type="checkbox" id="choix3" name="choix2" value="1941" onclick="question9(this.id)">
                           <label for="choix3"> 1941</label><br><br>
                       </div>
@@ -204,31 +206,35 @@
                 <!-- Question n°10 -->
                 <p>Question n°10 : Qui est la fille de Batman et Catwoman (Earth - 2) ?</p>
                 <form action="/action_page.php">
-                      <div class="question10">
+                      <div class="question10 quest">
                           <input type="checkbox" id="choix1" name="choix1" value="Oracle" onclick="question10(this.id)">
                           <label for="choix1"> Oracle</label><br>
                       </div>
-                      <div class="question10">
+                      <div class="question10 quest">
                           <input type="checkbox" id="choix2" name="choix2" value="Huntress" onclick="question10(this.id)">
                           <label for="choix2"> Huntress</label><br>
                       </div>
-                      <div class="question10">
+                      <div class="question10 quest">
                           <input type="checkbox" id="choix3" name="choix2" value="Black Canary" onclick="question10(this.id)">
                           <label for="choix3"> Black Canary</label><br><br>
                       </div>
                 </form>
-            </div>      
-            <button id="btn-confirm" style="margin-top: 5%;" onclick="notes()">SOUMETTRE MES REPONSES</button> 
-                       
-    </div>            
+            </div>                             
+    </div>
+
+    <div class="contain7 row justify-content-center align-content-center m-0 pt-5 p-0">
+        <button id="btn-confirm" style="margin: 5% 30%;" onclick="notes()">SOUMETTRE MES REPONSES</button> 
+    </div>
+
     <div id="layer">
         <h1 id="leGagnant"></h1>
         <button class="btn btn-primary end-game "style="position: absolute;margin-left: 56%;margin-top: -7%;" onclick="fermer()">X</button>
     </div>
+
     <div class="contain7 row justify-content-center align-content-center m-0 pt-5 p-0">
         <div class="boutons-game" style="text-align: center; display: block;">
             <h2>QUIZZ NIVEAU 1 : CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR ?</h2>
-            <img src="./assets/Illustrations/Game/Batgame2.png" style="position: relative;width: 100%;"><br>
+            <img src="./assets/Illustrations/Game/Batgame2.png" style="position: relative;width: 70%;"><br>
             <button id="btn-confirm" style="margin-top: 5%;">DEMARRER LE QUIZZ</button>               
         </div>
         <div class="text-footer" style="text-align:center; width:100%; margin-top: 5%; color: white;">
@@ -244,9 +250,10 @@
         </div>
     </div>
      
-<!--jquery-->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 <!--javascript-->
 <script type="text/javascript" src="./assets/js/game.js"></script>
+<!--Fichier jquery-->
+<script src="./assets/js/jquery.js"></script>
 </body>
 </html>

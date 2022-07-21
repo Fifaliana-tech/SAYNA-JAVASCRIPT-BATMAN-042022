@@ -371,6 +371,9 @@ figure {
 .logos img{
     margin : 10px;
 }
+.logos img:hover{
+    background-color: yellow;
+}
 
 /* GAME */
 .main-game {
@@ -425,15 +428,15 @@ figure {
 #layer {
     display: none;
     text-align: center;
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 60%;
     height: auto;
     border: 2px solid white;
     border-radius: 4px;
-    background-color: white;
+    background-color: LIGHTSEAGREEN;
     color: #6b6b6b;
     z-index: 1;
     box-shadow: 2px 2px 4px #000000;
-    margin-top: -15%;
     padding: 5%;
+    margin: -15% 20%;
 }

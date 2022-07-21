@@ -472,3 +472,5 @@ function fermer(){
     console.log("les notes");
     document.getElementById("layer").style.display = "none";
 }
+
+
